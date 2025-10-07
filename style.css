@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  background-color: #f9f9fb;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background: white;
+  padding: 40px 25px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  position: fixed;
+  height: 100%;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin: 10px 0 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  display: block;
+  color: #0070f3;
+  text-decoration: none;
+  margin: 8px 0;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #0056b3;
+}
+
+.content {
+  margin-left: 300px;
+  padding: 60px 80px;
+  max-width: 800px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.4em;
+  border-bottom: 2px solid #0070f3;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.exp-item {
+  margin-bottom: 20px;
+}
+
+.role {
+  font-weight: 500;
+  color: #444;
+}
+
+.time {
+  color: #777;
+  font-size: 0.9em;
+}
