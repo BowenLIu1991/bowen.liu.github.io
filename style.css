@@ -67,6 +67,20 @@ h3 {
 
 
 
+.job h4 {
+    color: #000; /* 整行文字黑色 */
+    font-weight: normal; 
+}
+
+.job .company {
+    font-weight: bold;
+    color: #000; /* 公司名黑色粗体 */
+}
+
+.job .title {
+    font-weight: normal;
+    color: #000; /* 职位黑色斜体 */
+}
 
 
 .hero-text h2 {
