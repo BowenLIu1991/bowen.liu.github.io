@@ -1,110 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bowen Liu | Applied Scientist</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="images/avatar.jpg" alt="Bowen Liu" class="avatar" />
-      <h1>Bowen Liu</h1>
-      <h2>Applied Scientist @ eBay Search</h2>
-      <p>📍 China Center of Excellence</p>
-      <p>
-        <a href="https://scholar.google.com/citations?user=sSJDXZYAAAAJ&hl=zh-CN">Google Scholar</a> · 
-        <a href="https://www.linkedin.com/in/bowen-liu-220b8769/">LinkedIn</a> · 
-        <a href="https://github.com/BowenLIu1991">GitHub</a>
-      </p>
-    </header>
+
+  <header class="header-bar">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Bowen Liu</h1>
+        <h2>Applied Scientist @ eBay Search</h2>
+        <p>📍 Shanghai, China</p>
+        <div class="contact-icons">
+          <a href="mailto:liubowen2010@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=sSJDXZYAAAAJ&hl=zh-CN" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+          <a href="https://www.linkedin.com/in/bowen-liu-220b8769/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/BowenLIu1991" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <img src="images/avatar.jpeg" alt="Bowen Liu" class="avatar">
+    </div>
+  </header>
+
+  <main class="container">
 
     <section id="about">
       <h3>About Me</h3>
       <p>
-        I’m an <b>Applied Scientist at eBay</b> with 5+ years of experience in AI, machine learning, optimization, and continuous dynamical systems. 
-        My expertise covers <b>Large Language Models (LLMs)</b>, Agents, RL, <b>optimization algorithms</b>, and <b>mathematical modeling</b>.
-        I work on search query optimization using LLMs and Agents to enhance retrieval relevance.
+        I am an <b>Applied Scientist at eBay</b> with over 5 years of experience in <b>AI, machine learning, optimization</b>, and <b>continuous dynamical systems</b>. 
+        My expertise includes <b>Large Language Models (LLMs)</b>, agentic systems, reinforcement learning, 
+        optimization algorithms, and mathematical modeling. 
+        Currently, I focus on search query optimization using LLMs to enhance retrieval relevance and overall system performance.
       </p>
     </section>
 
     <section id="experience">
       <h3>Professional Experience</h3>
+      
       <div class="job">
-        <h4>eBay Inc. — Applied Researcher (2024 – Present)</h4>
+        <h4>eBay Inc. — Applied Scientist (2024 – Present)</h4>
         <ul>
-          <li>Lead search query optimization using LLMs for query mapping and recall quality.</li>
-          <li>Develop evaluation pipelines for LLM-based retrieval systems.</li>
+          <li>Optimize search queries using LLMs and reinforcement learning for structured query mapping and retrieval improvement.</li>
+          <li>Designed and implemented evaluation pipelines for LLM-based retrieval systems.</li>
         </ul>
       </div>
+
       <div class="job">
         <h4>Huawei Technologies — Senior Engineer (2022 – 2024)</h4>
         <ul>
-          <li>Built domain-specific LLMs using SFT and LoRA; optimized distributed training.</li>
-          <li>Led PanGu-Weather project (Swin-Transformer, SOTA results).</li>
-          <li>Developed quantum-inspired molecular optimization methods (patent + paper under review).</li>
+          <li>Built domain-specific LLMs using SFT and LoRA; optimized distributed training workflows.</li>
+          <li>Led PanGu-Weather Precipitation project using Swin-Transformer, achieving state-of-the-art results.</li>
+          <li>Developed quantum-inspired molecular optimization methods for drug design (patents & publications).</li>
         </ul>
       </div>
+
       <div class="job">
         <h4>Shanghai Jiao Tong University — Assistant Professor (2020 – 2022)</h4>
         <ul>
           <li>Researched quantum-inspired optimization and celestial mechanics using symplectic topology.</li>
-          <li>Taught Calculus I/II and Mathematical Analysis (top 10% rating).</li>
+          <li>Taught Calculus I/II and Mathematical Analysis (top 10% student evaluation scores).</li>
         </ul>
       </div>
-      <div class="job">
-        <h4>University of Augsburg — Postdoctoral Researcher (2018 – 2020)</h4>
-        <ul>
-          <li>Member of Emmy Noether Group funded by CSC–DAAD.</li>
-          <li>Worked on N-body problems via symplectic geometry and variational methods.</li>
-        </ul>
-      </div>
+
     </section>
 
     <section id="education">
       <h3>Education</h3>
       <ul>
-        <li><b>Ph.D.</b> Pure Mathematics — Nankai University (2015 – 2018)</li>
-        <li><b>M.Sc.</b> Pure Mathematics — Nankai University (2013 – 2015)</li>
+        <li><b>Ph.D.</b> Pure Mathematics — Nankai University (2015 – 2018)<br>
+            Focus: Celestial Mechanics and Geometry
+        </li>
+         <li><b>Master student</b> Pure Mathematics — Nankai University (2013 – 2015)</li>
         <li><b>B.Sc.</b> Mathematics & Applied Mathematics — Jilin University (2009 – 2013)</li>
         <li><b>Visiting Honors Student</b> — Georgia Tech (2012)</li>
       </ul>
     </section>
 
-    <section id="publications">
-      <h3>Selected Publications</h3>
-      <ul>
-        <li>
-          LESER: Learning to Expand via Search Engine-feedback Reinforcement in e-Commerce,
-          <em>arXiv preprint arXiv:2509.05570</em>, 2025<br />
-          <small>Y. Zhang, <b>B. Liu</b>, X. Zhang, A. Mandal, Z. Wu, C. Xu</small>
-        </li>
-        <li>Quantum Molecular Docking with Quantum-Inspired Algorithm, <em>J. Chem. Theory Comput.</em>, 2024</li>
-        <li>Efficient Molecular Conformation Generation with Quantum-Inspired Algorithm, <em>J. Mol. Modeling</em>, 2024</li>
-        <li>Performance of Quantum Annealing-Inspired Algorithms for Combinatorial Optimization, <em>Commun. Phys.</em>, 2024</li>
-        <li>
-          On Connection among Quantum-Inspired Algorithms of the Ising Model, 
-          <em>Communications in Mathematical Sciences 21 (7), 2013-2028</em><br />
-          <small><b>B. Liu</b>, K. Wang, D. Xiao, Z. Yu</small>
-        </li>
-        <li>
-          Linear Instability of Elliptic Rhombus Solutions to the Planar Four-Body Problem, 
-          <em>Nonlinearity, Volume 34, Number 11</em>, 6 October 2021<br />
-          <small><b>B. Liu</b> • DOI: <a href="https://doi.org/10.1088/1361-6544/ac288e">10.1088/1361-6544/ac288e</a></small>
-        </li>
-        <li><a href="https://scholar.google.com/citations?user=sSJDXZYAAAAJ&hl=zh-CN">Full list → Google Scholar</a></li>
-      </ul>
-    </section>
+   <section id="publications">
+  <h3>Selected Publications</h3>
+  <ul>
+    <li>
+      LESER: Learning to Expand via Search Engine-feedback Reinforcement in e-Commerce<br>
+      Y. Zhang, <b>B. Liu</b>, X. Zhang, A. Mandal, Z. Wu, C. Xu<br>
+      <em>arXiv preprint arXiv:2509.05570, 2025</em>
+    </li>
+    <li>
+      Quantum molecular docking with a quantum-inspired algorithm<br>
+      Y. Li, X. Cui, Z. Xiong, <b>B. Liu</b>, B.Y. Wang, R. Shu, N. Qiao, M.H. Yung<br>
+      <em>Journal of Chemical Theory and Computation 20 (15), 6687–6694</em>
+    </li>
+    <li>
+      Quantum-inspired machine learning for molecular docking<br>
+      R. Shu, <b>B. Liu</b>, Z. Xiong, X. Cui, Y. Li, W. Cui, M.H. Yung, N. Qiao<br>
+      <em>arXiv preprint arXiv:2401.12999</em>
+    </li>
+    <li>
+      On Connection among Quantum-Inspired Algorithms of the Ising Model<br>
+      <b>B. Liu</b>, K. Wang, D. Xiao, Z. Yu<br>
+      <em>Communications in Mathematical Sciences 21 (7), 2013–2028</em>
+    </li>
+    <li>
+      Linear Instability of Elliptic Rhombus Solutions to the Planar Four-Body Problem<br>
+      <b>B. Liu</b><br>
+      <em>Nonlinearity, Volume 34, Number 11, 6 October 2021</em>
+    </li>
+  </ul>
+</section>
 
-    <section id="hobbies">
-      <h3>Hobbies</h3>
-      <p>Swimming, table tennis, badminton, skating, and cooking.</p>
-    </section>
+  </main>
 
-    <footer>
-      <p>© 2025 Bowen Liu · Last updated October 2025</p>
-    </footer>
-  </div>
+  <footer class="fixed-bottom">
+    <div class="container">
+      © 2025 Bowen Liu
+    </div>
+  </footer>
+
 </body>
 </html>

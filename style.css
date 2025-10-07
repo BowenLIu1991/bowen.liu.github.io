@@ -1,76 +1,135 @@
-/* 基础样式 */
+:root {
+  --global-bg-color: #fefefe;
+  --global-text-color: #111;
+  --global-theme-color: #ff6c0c;
+  --global-divider-color: rgba(0,0,0,.1);
+  --global-code-bg-color: rgba(240,240,240,.5);
+}
+
+/* 全局样式 */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
 }
 
 .container {
   max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-header {
-  text-align: center;
-  padding: 40px 0;
+h1,h2,h3,h4 {
+  color: var(--global-theme-color);
+  margin: 0.5rem 0;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+h3 {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
 }
 
-header h2 {
-  margin: 10px 0;
-  font-weight: normal;
-  color: #555;
+
+/* 让 header 内容和 main container 宽度一致 */
+.header-bar .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 800px;       /* 和 main.container 一致 */
+    margin: 0 auto;         /* 居中 */
+    padding: 2rem 0;        /* 顶部和底部间距 */
+    flex-wrap: wrap;
 }
 
-header p a {
-  text-decoration: none;
-  color: #007bff;
-  margin: 0 5px;
+.hero .avatar {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0;
+    border: 1px solid var(--global-divider-color);
 }
 
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ddd;
-  margin-bottom: 15px;
+.hero-text {
+    flex: 1;
 }
 
-section {
-  margin-bottom: 40px;
+
+/* Hero Section */
+.header-bar {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding: 2rem 1rem;
 }
 
-section h3 {
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 5px;
-  color: #007bff;
+
+
+
+
+
+
+.hero-text h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
 }
 
-.job h4 {
-  margin: 10px 0 5px 0;
+.contact-icons {
+  margin-top: 0.5rem;
+}
+
+.contact-icons a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--global-text-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-icons a:hover {
+  color: var(--global-theme-color);
+}
+
+/* Sections */
+section p, section ul, section li {
+  line-height: 1.6;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .job ul {
-  margin: 0 0 15px 20px;
+  padding-left: 1.2rem;
 }
 
-footer {
+.job li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer.fixed-bottom {
+  background-color: #111;
+  color: #eee;
   text-align: center;
-  font-size: 0.9em;
-  color: #666;
-  padding: 20px 0;
-  border-top: 1px solid #ccc;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+
+/* 链接风格 */
+a {
+  color: var(--global-theme-color);
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Publications */
+#publications ul li {
+  margin-bottom: 1rem;
+}
+#publications ul li small a {
+  color: var(--global-theme-color);
 }
